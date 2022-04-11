@@ -42,9 +42,6 @@ public class BankAccount extends BaseEntity {
     private String accountBranchContactPersonState;
     private String accountBranchContactPersonCountry;
     private String accountBranchContactPersonZipCode;
-    private String accountBranchContactPersonFax;
-    private String accountBranchContactPersonMobile;
-    private String accountBranchContactPersonEmail;
     private String accountBranchContactPersonContactPerson;
     private String accountBranchContactPersonContactPersonPhone;
     private String accountBranchContactPersonContactPersonEmail;
