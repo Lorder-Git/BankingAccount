@@ -3,26 +3,27 @@ package com.banking.account.queries.domain;
 import com.banking.account.common.dto.AccountType;
 import com.banking.cqrs.core.domain.BaseEntity;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@SuperBuilder
+@Builder
+@Entity
 public class BankAccount extends BaseEntity {
 
+    @Id
     private String accountId;
-    private Date accountCreatedDate;
+
     private String accountHolder;
-    private String accountNumber;
-    private String accountName;
+    private Date accountCreationDate;
     private AccountType accountType;
-    private String accountCurrency;
-    private String accountStatus;
-    private Double accountBalance;
+    private double accountBalance;
 
 }

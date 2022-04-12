@@ -21,7 +21,7 @@ public class AccountEventHandler implements EventHandler {
                 BankAccount.builder()
                         .accountId(openEvent.getId())
                         .accountHolder(openEvent.getAccountHolderName())
-                        .accountCreatedDate(openEvent.getOpeningDate())
+                        .accountCreationDate(openEvent.getOpeningDate())
                         .accountType(openEvent.getAccountType())
                         .accountBalance(openEvent.getOpeningBalance())
                         .build();
